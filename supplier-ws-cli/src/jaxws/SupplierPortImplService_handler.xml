@@ -1,0 +1,22 @@
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+	<handler-chain>
+        <handler>
+			<handler-class>org.komparator.security.handler.LoggingHandler</handler-class>
+		</handler>
+        <handler>
+			<handler-class>org.komparator.security.handler.SecurityHandler</handler-class>
+		</handler>
+        <handler>
+			<handler-class>org.komparator.security.handler.AddTokenHandler</handler-class>
+		</handler>
+        <handler>
+			<handler-class>org.komparator.security.handler.SigningHandler</handler-class>
+		</handler>
+        <handler>
+            <handler-class>org.komparator.security.handler.CheckSigningHandler</handler-class>
+        </handler>
+		<handler>
+			<handler-class>org.komparator.security.handler.LoggingHandler</handler-class>
+		</handler>
+	</handler-chain>
+</handler-chains>
